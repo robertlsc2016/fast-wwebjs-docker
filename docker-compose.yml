@@ -1,0 +1,15 @@
+services:
+  test-wwebjs:
+    init: true
+    # command: sh -c "if [ \"$AMBIENT\" = 'production' ]; then npm run start:prod; else npm start; fi"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: test-wwebjs
+    volumes:
+      - ./auth:/app/auth
+    restart: always
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env

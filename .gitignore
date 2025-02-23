@@ -1,0 +1,8 @@
+/.wwebjs_cache
+/node_modules
+/session
+/dist
+*.sqlite
+.env
+/session
+/auth
