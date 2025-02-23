@@ -12,8 +12,4 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 4000
-
-# Defina o comando padrão para iniciar a aplicação
-
 CMD ["npm", "start"]
